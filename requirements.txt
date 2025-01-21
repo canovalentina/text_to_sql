@@ -4,3 +4,4 @@ pandas
 python-dotenv
 google-generativeai
 sqlite-database
+db-sqlite3
