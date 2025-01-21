@@ -54,9 +54,9 @@ It contains several helper functions to organize the code. Ultimately, the prima
 
 ### Output
 
-The extracted data is a JSON string.
+The extracted data is a JSON string. To copy it to a JSON file, I created the helper function `save_json_to_file(json_str, file_path)`.
 
-In `test.py`, I used the helper functions `save_json_to_file(json_str=result, file_path=replace_file_type_with_json(file_path))` to output the JSON string to a JSON file which has the same name as the original file (e.g. family.csv -> family.json)
+For example, in `test.py`, I ran `save_json_to_file(json_str=result, file_path=replace_file_type_with_json(file_path))` to save the query output into a JSON file which has the same name as the original file (e.g. family.csv -> family.json)
 
 ## How to test
 
