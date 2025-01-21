@@ -14,10 +14,6 @@ load_dotenv(override=True)
 file_path = "sample_data/family.csv"
 user_prompt = "Give me information on all female members of my family."
 
-# # Pydantic warning
-# import warnings
-# warnings.filterwarnings("ignore", message="Valid config keys have changed in V2")
-
 def create_data_loader(file_path: str) -> DataLoader:
   """
   Create data loader depending on specified file type.
