@@ -1,0 +1,6 @@
+litellm
+pydantic
+pandas
+python-dotenv
+google-generativeai
+sqlite-database
