@@ -84,6 +84,6 @@ The results of my test are in sample_data/family.json.
 Due to time constraints, the scope of this project was limited.
 Future iterations should include:
 
-- Handling of followup prompts. This would require storing the previous prompt in memory.
+- Handling of followup prompts. This would require storing the previous prompt and answers in memory.
 - Testing
 - A Command-line interface, API layer or web interface to run the package more easily.
