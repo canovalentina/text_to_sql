@@ -1,6 +1,6 @@
 import litellm
 import time
-from llm_providers.llm_provider import LLMProvider
+from text_to_sql_package.llm_providers.llm_provider import LLMProvider
 
 class LiteLLMProvider():
     

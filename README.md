@@ -69,15 +69,17 @@ Other options are available here: https://docs.litellm.ai/
 
 #### Set up the file path and user prompt
 
-Provide the file path with the data set and the natural language prompt to query the database in the `test.py` file.
+To run the code, I am using the `examples` folder.
 
-Then, run `python test.py` in the terminal.
+1. Create the dataset within the examples folder
+2. Add the dataset file path and natural language user prompt to query the database to variables in `example.py`
+3. run `python -m examples.example` in the terminal.
 
 For example, I selected:
-`file_path = "sample_data/family.csv"`
+`file_path = "examples/sample_data/family.csv"`
 `user_prompt = "Give me information on all female members of my family.`
 
-The results of my test are in sample_data/family.json.
+The results of my test are in `examples/sample_data/family.json.`
 
 ## Future considerations
 

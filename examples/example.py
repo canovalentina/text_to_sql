@@ -1,17 +1,18 @@
-from data_loaders.data_loader import DataLoader 
-from data_loaders.csv_loader import CSVLoader 
-from data_loaders.tsv_loader import TSVLoader 
-from data_loaders.excel_loader import ExcelLoader 
-from llm_providers.litellm_provider import LiteLLMProvider 
-from database_connectors.sqlite_connector import SQLiteDatabaseConnector 
-from data_validators.pydantic_validator import PydanticValidator 
-from text_to_sql import TextToSQL 
-from utils.file_utils import save_json_to_file, replace_file_type_with_json
+from text_to_sql_package.data_loaders.data_loader import DataLoader 
+from text_to_sql_package.data_loaders.csv_loader import CSVLoader 
+from text_to_sql_package.data_loaders.tsv_loader import TSVLoader 
+from text_to_sql_package.data_loaders.excel_loader import ExcelLoader 
+from text_to_sql_package.llm_providers.litellm_provider import LiteLLMProvider 
+from text_to_sql_package.database_connectors.sqlite_connector import SQLiteDatabaseConnector 
+from text_to_sql_package.data_validators.pydantic_validator import PydanticValidator 
+from text_to_sql_package.text_to_sql import TextToSQL 
+from text_to_sql_package.utils.file_utils import save_json_to_file, replace_file_type_with_json
 from dotenv import load_dotenv
 import os
 load_dotenv(override=True)
 
-file_path = "sample_data/family.csv"
+path = "examples/sample_data/"
+file_path = f"{path}family.csv"
 user_prompt = "Give me information on all female members of my family."
 
 def create_data_loader(file_path: str) -> DataLoader:
@@ -46,7 +47,7 @@ if __name__ == "__main__":
     # Initialize the components 
     data_loader = create_data_loader(file_path=file_path)
     llm_provider = LiteLLMProvider(model_name=model_name)
-    database_connector = SQLiteDatabaseConnector(db_path="test.db")
+    database_connector = SQLiteDatabaseConnector(db_path=f"{path}example.db")
     data_validator = PydanticValidator()
     
   except Exception as e:

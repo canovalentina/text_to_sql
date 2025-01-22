@@ -3,7 +3,7 @@ import pandas as pd
 import json
 from pydantic import BaseModel, ValidationError, create_model
 from datetime import datetime
-from data_validators.data_validator import DataValidator
+from text_to_sql_package.data_validators.data_validator import DataValidator
 
 class PydanticValidator:
   

@@ -1,10 +1,10 @@
 import pandas as pd
 import json
-from data_loaders.data_loader import DataLoader
-from llm_providers.llm_provider import LLMProvider
-from database_connectors.sql_database_connector import SQLDatabaseConnector
-from data_validators.data_validator import DataValidator
-from utils.dataframe_utils import generate_schema_from_dataframe
+from text_to_sql_package.data_loaders.data_loader import DataLoader
+from text_to_sql_package.llm_providers.llm_provider import LLMProvider
+from text_to_sql_package.database_connectors.sql_database_connector import SQLDatabaseConnector
+from text_to_sql_package.data_validators.data_validator import DataValidator
+from text_to_sql_package.utils.dataframe_utils import generate_schema_from_dataframe
 
 class TextToSQL:
   

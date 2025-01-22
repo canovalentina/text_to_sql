@@ -1,7 +1,7 @@
 import pandas as pd
-from utils.dataframe_utils import clean_dataframe 
-from utils.file_utils import check_file_exists, check_file_type
-from data_loaders.data_loader import DataLoader
+from text_to_sql_package.utils.dataframe_utils import clean_dataframe 
+from text_to_sql_package.utils.file_utils import check_file_exists, check_file_type
+from text_to_sql_package.data_loaders.data_loader import DataLoader
 
 class CSVLoader:
   

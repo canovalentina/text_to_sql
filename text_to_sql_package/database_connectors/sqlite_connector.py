@@ -1,7 +1,7 @@
 import sqlite3
 from typing import List, Dict, Self
 import pandas as pd
-from database_connectors.sql_database_connector import SQLDatabaseConnector
+from text_to_sql_package.database_connectors.sql_database_connector import SQLDatabaseConnector
 
 class SQLiteDatabaseConnector:
   
